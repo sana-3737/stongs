@@ -43,12 +43,16 @@ export default function Playlistbutton () {
 };
 
   return (
-    <div>
-      <label>
+  <div>
+    <div className= "flex items-center gap-4 mb-4">
+      <span className="text-sm text-black">
         今日は何分のプレイリストを作る？ :
+      </span>
+       <div className="relative">
         <select
             value={targetMinutes}
             onChange={(e) => setTargetMinutes(Number(e.target.value))}
+            className = "h-[40px] bg-[#8787af] text-white text-sm rounded-md px-2 py-1.5 pr-8 focus:bg-[#9a9ac2] focus:outline-none focus:ring-2 focus:ring-white transition appearance-none"
           >
            {[...Array(24)].map((_, i) => {
               const minutes = (i + 1) * 5;
@@ -59,10 +63,16 @@ export default function Playlistbutton () {
               );
             })}   
         </select>
-      </label>
-      <button onClick={handleClick}>プレイリストを作成！</button>
-
-      <ul>
+        <div className ="pointer-events-none absolute right-2 top-1/2 transform -translate-y-1/2 text-white text-xs">
+          ▼
+        </div>
+      </div>
+      <button onClick={handleClick}
+      className = "h-[40px] bg-[#8787af] text-white px-1 py-1.5 text-sm rounded-md  hover:bg-[#9a9ac2] transition"
+      >プレイリストを作成！</button>
+</div>
+    <div className = "max-h-[400px] w-full max-w-[95%] md:max-w-[70%] lg:max-w-[70%] overflow-y-auto space-y-5 pr-2 bg-[#f3f3fa] rounded-xl text-black shadow-lg p-4 ">
+      <ul className = "space-y-1.5">
         {playlistMeta.map((song) => (
           <li key={song.id}>
             <strong>{song.title}</strong> - {song.cd}
@@ -72,8 +82,9 @@ export default function Playlistbutton () {
           </li>
         ))}
       </ul>
-      {message && message.split('\n').map((line, i) => <p key={i}>{line}</p>)}
+     </div>
+          {message && message.split('\n').map((line, i) => <p key={i} className = {i === 0 ? "mt-6":""}>{line}</p>)}
 
-    </div>
+    </div>  
   );
 }
