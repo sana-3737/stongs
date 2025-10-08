@@ -20,7 +20,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
 
         {/* フッター（必要なら） */}
         {<footer className="bg-gray-200 text-center p-4 text-sm text-gray-600">
-          © Sana's playlistApp
+          © {'Sana\'s'} playlistApp
         </footer> }
       </body>
     </html>
