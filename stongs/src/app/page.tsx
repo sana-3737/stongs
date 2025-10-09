@@ -5,12 +5,12 @@ import Linkspace from '@/components/linkspace';'./components/linkspace.tsx';
  
 export default function Home() {
   return (
-   <main className="min-h-screen max-w-[900px] mx-auto rounded-lg bg-[#e6e6fa] p-6 shadow-md pb-24">
+   <main className="min-h-screen mx-auto rounded-lg bg-[#e6e6fa] p-6 shadow-md pb-24 sm:w-[900px]">
   <h1 className="text-xl font-bold mb-6 text-center">わくわく シャッフルプレイリスト🎶</h1>
 
-  <div className="flex flex-col md:flex-row gap-6 max-w-5xl mx-auto">
+  <div className="flex flex-col md:flex-row gap-6 max-w-full mx-auto">
     
-    <div className="md:w-2/3">
+    <div className="md:w-2/3 ">
       <Playlist />
     </div>
     

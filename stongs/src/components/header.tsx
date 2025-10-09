@@ -9,7 +9,7 @@ export default function Header() {
   href="/"
   className="text-white px-3 py-1 font-normal hover:underline hover:decoration-[#f3f3fa] text-lg flex items-center gap-x-2"
 >
-  <FileMusic className="w-5 h-5" />
+  <FileMusic className="w-10 h-10" />
   <span>プレイリストメーカー</span>
 </Link>
 
@@ -17,7 +17,7 @@ export default function Header() {
   href="/omikuji"
   className="bg-white text-[#8787af] px-3 py-1 rounded hover:bg-gray-100 text-sm font-normal flex items-center gap-x-2"
 >
-  <Clover className="w-4 h-4" />
+  <Clover className="w-8 h-8" />
   <span>おみくじページへ！</span>
 </Link>
     </header>
