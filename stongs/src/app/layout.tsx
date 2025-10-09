@@ -5,8 +5,8 @@ import Main from '@/components/main';
 import Footer from '@/components/footer';
 
 export const metadata: Metadata = {
-  title: 'プレイリストメーカー',
-  description: '動画付きプレイリストを作成するアプリ',
+  title: 'makeing playlist',
+  description: 'playlist app',
 };
 
 export default function Layout({ children }: { children: React.ReactNode }) {
