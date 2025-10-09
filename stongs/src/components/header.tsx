@@ -2,8 +2,14 @@ import Link from 'next/link';
 
 export default function Header() {
   return (
+    <div>
     <header className="bg-[#8787af] text-white p-4 text-xl font-bold flex justify-between items-center">
-      <span>🎶 プレイリストメーカー</span>
+     <Link
+        href="/"
+        className="text-white px-3 py-1  font-normal hover:underline hover:decoration-[#f3f3fa] text-lg"
+     >
+       🎶 プレイリストメーカー
+     </Link>
       <Link
         href="/omikuji"
         className="bg-white text-[#8787af] px-3 py-1 rounded hover:bg-gray-100 text-sm font-normal"
@@ -11,5 +17,6 @@ export default function Header() {
         🎴 おみくじページへ！
       </Link>
     </header>
+    </div>
   );
 }
