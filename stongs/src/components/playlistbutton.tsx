@@ -71,13 +71,13 @@ export default function Playlistbutton () {
       className = "h-[40px] bg-[#8787af] text-white px-1 py-1.5 text-sm rounded-md  hover:bg-[#9a9ac2] transition"
       >プレイリストを作成！</button>
 </div>
-    <div className = "max-h-[400px] w-full max-w-[95%] md:max-w-[70%] lg:max-w-[70%] overflow-y-auto space-y-5 pr-2 bg-[#f3f3fa] rounded-xl text-black shadow-lg p-4 ">
+    <div className = "max-h-[400px] w-full max-w-[95%]  overflow-y-auto space-y-5 pr-2 bg-[#f3f3fa] rounded-xl text-black shadow-lg p-4 ">
       <ul className = "space-y-1.5">
         {playlistMeta.map((song) => (
           <li key={song.id}>
-            <strong>{song.title}</strong> - {song.cd}
+            <strong >{song.title}</strong> - {song.cd}
             <br />
-            <a href={song.url} target="_blank" rel="noopener noreferrer">
+            <a href={song.url} target="_blank" rel="noopener noreferrer" className='hover:text-[#8787af]'>
               ▶動画を見る            </a>
           </li>
         ))}

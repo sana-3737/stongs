@@ -1,14 +1,23 @@
 import React from 'react';
 import Playlist  from './playlist';
-import Link from 'next/link';
+import Linkspace from '@/components/linkspace';'./components/linkspace.tsx';
+
  
 export default function Home() {
   return (
-   
-    <main>  
-    <h1>わくわく  シャッフルプレイリスト🎶</h1>
+   <main className="min-h-screen max-w-[900px] max-h-[600px] mx-auto rounded-lg bg-[#e6e6fa] p-6 shadow-md">
+  <h1 className="text-xl font-bold mb-6 text-center">わくわく シャッフルプレイリスト🎶</h1>
 
+  <div className="flex flex-col md:flex-row gap-6 max-w-5xl mx-auto">
+    
+    <div className="md:w-2/3">
       <Playlist />
-    </main>
+    </div>
+    
+    <div className="md:w-1/3">
+      <Linkspace />
+    </div>
+  </div>
+</main>
   );
 }
