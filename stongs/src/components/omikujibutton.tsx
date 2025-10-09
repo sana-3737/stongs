@@ -26,14 +26,14 @@ export default function Omikujibutton () {
       </button>
 
       {selectedSong && (
-        <div className="mt-6 p-4 bg-[#f4f4fa] rounded shadow-md animate-fade-in">
+        <div className="mt-6 p-4 bg-[#f4f4fa] rounded-lg shadow-md animate-fade-in">
           <h2 className="text-lg font-bold mb-2">🎵 今日の一曲 🎵</h2>
           <p className="text-md">{selectedSong.title} </p>
           <a
             href={selectedSong.url}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-blue-500 underline mt-2 inline-block"
+            className="text-[#8787af] hover:underline mt-2 inline-block"
           >
             動画を見る
           </a>
