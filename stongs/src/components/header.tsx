@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { FileMusic } from 'lucide-react';
 
 export default function Header() {
   return (
@@ -7,7 +8,7 @@ export default function Header() {
      <Link
         href="/"
         className="text-white px-3 py-1  font-normal hover:underline hover:decoration-[#f3f3fa] text-lg"
-     >
+     > <FileMusic />
        🎶 プレイリストメーカー
      </Link>
       <Link
