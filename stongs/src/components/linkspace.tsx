@@ -22,6 +22,16 @@ export default function Linkspace (){
            SixTONES YouTube
           </a>
         </li>
+        <li>
+          <a href="https://music.apple.com/jp/artist/sixtones/1808322699" target='_blank' className="text-black hover:underline hover:text-[#8787af]">
+           SixTONES AppleMusic
+          </a>
+        </li>
+        <li>
+          <a href="https://open.spotify.com/intl-ja/artist/7dhueqtbx2NVq1leXyqaNl" target='_blank' className="text-black hover:underline hover:text-[#8787af]">
+           SixTONES Spotify
+          </a>
+        </li>
       </ul>
     </div>
     );
